@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- formulario -->
+<form  id="formulario" action="" method="get">
+  
+        <label class="form-label" for="numero1">Número 1</label>
+        <input  id="numero1" name="numero1" type="text" placeholder="Enter a number">
+        <br>
+        
+        <label for="numero2">Número 2</label>
+        <input id="numero2" name="numero2" type="text" placeholder="Enter a number">
+        <br>    
+    
+        
+</form>
+
+    <!-- inputs -->
+    <button onclick="suma()">Suma</button>
+    <button onclick="resta()">Resta</button>
+    <button onclick="multiplicacion()">Multiplicación</button>
+    <button onclick="division()">División</button>
+    <button onclick="limpiar()">Limpiar</button>
+    <br>
+    <p>El resultado es: <span id="resultado"></span></p>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
