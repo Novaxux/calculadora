@@ -1,37 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- formulario -->
-<form  id="formulario" action="" method="get">
-  
-        <label class="form-label" for="numero1">Número 1</label>
-        <input  id="numero1" name="numero1" type="text" placeholder="Enter a number">
-        <br>
-        
-        <label for="numero2">Número 2</label>
-        <input id="numero2" name="numero2" type="text" placeholder="Enter a number">
-        <br>    
+    <!-- navegacion -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+              <img src="https://lamanzanamordida.net/app/uploads-lamanzanamordida.net/2017/10/Calculadora-icono-iOS.png" alt="" width="36" class="d-inline-block align-text-top">
+              Caluladora Simple
+            </a>
+        </div>
+    </nav>
+    <!-- formulario -->
     
+    <div class="container my-2">
+        <div class="row">
+                
+            <div class="col-md-4">
+                <form  id="formulario" action="" method="get">
+                    <label class="form-label" for="numero1">Número 1</label>
+                    <input  id="numero1" name="numero1" type="text" placeholder="Enter a number">
+                    
+                    <label for="numero2">Número 2</label>
+                    <input id="numero2" name="numero2" type="text" placeholder="Enter a number">
+                    
+                </form>
+            </div>
+            <div class="col-md-3 bkcolor">
+                
+                <p>El resultado es: <span class="resultado" id="resultado"></span></p>
+            </div>
+        </div>
         
-</form>
+        <!-- botones -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="d-grid gap-2 col-12 mx-auto">
 
-    <!-- inputs -->
-    <button onclick="suma()">Suma</button>
-    <button onclick="resta()">Resta</button>
-    <button onclick="multiplicacion()">Multiplicación</button>
-    <button onclick="division()">División</button>
-    <button onclick="limpiar()">Limpiar</button>
-    <br>
-    <p>El resultado es: <span id="resultado"></span></p>
-
-
+                <button class="btn btn-info" type="button" onclick="multiplicacion()">Multiplicar</button>
+                <button class="btn btn-info" type="button" onclick="division()">Dividir</button>
+            </div>
+        </div>
+        <div class="col-md-2">
+            
+            <div class="d-grid gap-2 col-12 mx-auto">
+                    
+                <button class="btn btn-info" type="button" onclick="suma()">Sumar</button>
+                <button class="btn btn-info" type="button" onclick="resta()">Restar</button>
+                
+                </div>
+            </div>
+            <div class="col-md-3">
+                
+                <div class="d-grid gap-2 col-12 mx-auto">
+                    
+                    <button  class="btn btn-warning" type="button" onclick="limpiar()">Limpiar</button>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+        
+    
+    
     <script src="app.js"></script>
 </body>
 </html>
