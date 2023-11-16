@@ -4,9 +4,32 @@
 .bkcolor{
     background-color: aquamarine;
 }
-.resultado{
+#resultado{
     color: rgb(255, 98, 0);
+    
 }
 .color_calc{
     background-color: rgb(175, 213, 247);
+}
+.boton{
+    width: 100%;
+    height: 45px;
+    font-size: 9px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(137, 137, 248);
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.boton_rojo{
+    width: 100%;
+    height: 45px;
+    font-size: 9px;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 5px 2px 2px rgba(0, 0, 0, 0.2);
+    background-color: rgb(185, 7, 7);
+    margin-top: 10px;
+    font-weight: bold;
+    border-radius: 20px;
 }

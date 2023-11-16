@@ -71,3 +71,46 @@ function limpiar(){
    document.getElementById('formulario').reset();
    
 }
+
+
+
+let boton = document.querySelector('.boton');
+
+
+// Eventos del mouse
+               // evento | función
+boton.addEventListener('click',function(){
+   console.log('Dimos click en el botón')
+   boton.classList.toggle('boton_rojo');
+})
+
+boton.addEventListener('mouseout',function(){
+   console.log('Salí del botón')
+
+})
+
+
+//eventos del teclado
+window.addEventListener('keydown',(e)=>{
+   console.log('pulso una tecla')
+   console.log(String.fromCharCode(e.keyCode))
+})
+
+window.addEventListener('keypress',()=>{
+   console.log('presione una tecla')
+})
+window.addEventListener('keyup',()=>{
+   console.log('dejé de presionar una tecla')
+})
+
+window.addEventListener('load',() => {
+   console.log('Terminé de cargar la página')
+})
+
+
+function escribir(){
+   let text = document.getElementById("texto").textContent;
+   let texto = document.getElementById("Escribir").textContent;
+
+   
+}
