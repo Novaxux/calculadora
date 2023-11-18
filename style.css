@@ -11,8 +11,14 @@
 .color_calc{
     background-color: rgb(175, 213, 247);
 }
+.botonClick{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .boton{
-    width: 100%;
+    width: 100px;
     height: 45px;
     font-size: 9px;
     color: white;
@@ -24,7 +30,7 @@
     border-radius: 20px;
 }
 .boton_2{
-    width: 100%;
+    width: 100px;
     height: 45px;
     font-size: 9px;
     /* offset-x | offset-y | blur-radius | spread-radius | color */
