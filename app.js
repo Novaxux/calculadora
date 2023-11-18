@@ -97,7 +97,7 @@ window.addEventListener('keydown',(e)=>{
 })
 
 window.addEventListener('keypress',()=>{
-   console.log('presione una tecla')
+   console.log('presioné una tecla')
 })
 window.addEventListener('keyup',()=>{
    console.log('dejé de presionar una tecla')
