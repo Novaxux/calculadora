@@ -78,10 +78,10 @@ let boton = document.querySelector('.boton');
 
 
 // Eventos del mouse
-               // evento | función
+                     // evento | función
 boton.addEventListener('click',function(){
    console.log('Dimos click en el botón')
-   boton.classList.toggle('boton_rojo');
+   boton.classList.toggle('boton_2');
 })
 
 boton.addEventListener('mouseout',function(){
@@ -106,11 +106,3 @@ window.addEventListener('keyup',()=>{
 window.addEventListener('load',() => {
    console.log('Terminé de cargar la página')
 })
-
-
-function escribir(){
-   let text = document.getElementById("texto").textContent;
-   let texto = document.getElementById("Escribir").textContent;
-
-   
-}
