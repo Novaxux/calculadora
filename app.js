@@ -84,6 +84,10 @@ boton.addEventListener('click',function(){
    boton.classList.toggle('boton_2');
 })
 
+boton.addEventListener('mousein',function(){
+   console.log('Entré al botón')
+
+})
 boton.addEventListener('mouseout',function(){
    console.log('Salí del botón')
 
